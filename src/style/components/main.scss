@@ -1,0 +1,98 @@
+
+.main__image_list{
+  margin-top: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+div.main_image_box_gallary {
+  border: 1px solid #ccc;
+}
+
+div.main_image_box_gallary:hover {
+  border: 1px solid #777;
+}
+
+div.main_image_box_gallary img {
+  width: 100%;
+  height: 18vw;
+}
+
+div.main__image_box_gallary_desc {
+  padding: 7px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main_image_box {
+  padding: 5px 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 780px) and (min-width: 499px){
+  .main_image_box {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  div.main_image_box_gallary img {
+    width: 100%;
+    height: 25vw;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .main_image_box {
+    width: 100%;
+  }
+  div.main_image_box_gallary img {
+    width: 100%;
+    height: 50vw;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main_delete{
+  width: 110px;
+  height: 130px;
+  background-image: url(../images/component/corn.png);
+  background-size: cover;
+  position: fixed;
+  bottom: 15px;
+  right:20px;
+  background-color: lightcyan;
+  border-radius: 20px;
+}
+
+.main_delete {
+  transition: all linear 0.5s;
+}
+.main_delete.ng-hide {
+  opacity: 0;
+}
+
+@media screen and  (max-width: 780px){
+  .main_delete{
+    width: 90px;
+    height: 100px;
+  }
+}
+
+@media screen and  (max-width: 480px){
+  .main_delete{
+    width: 80px;
+    height: 90px;
+  }
+}
+
+

@@ -1,0 +1,120 @@
+.header{
+  height: 120px;
+  background-image: url("../images/component/header.jpg");
+  background-size: cover;
+  background-position-y: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px){
+    header{
+      height: 180px;
+    }
+}
+.header__nav_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  li {
+    padding: 10px;
+  }
+}
+.header__nav_list_h2 {
+  color: whitesmoke;
+  font-size: 12pt;
+  background-color: rgba(173, 173, 173, 0.3);
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+.header__nav_list_h2:hover{
+  background-color: rgba(173, 173, 173, 0.9);
+  cursor: pointer;
+}
+.header__nav_list_h2{
+  font-size: 16pt;
+  margin:10px 0;
+}
+
+.header__modal_wrap{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(173, 173, 173, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.header__modal_box{
+  width: 400px;
+  height: 200px;
+  background-color: whitesmoke;
+}
+.header__modal_header{
+  background-color: #1d5963;
+  padding: 10px;
+}
+.header__modal_header h2{
+  color: whitesmoke;
+  font-size: 14pt;
+  text-align: center;
+  position: relative;
+}
+.header__modal_header_exit{
+  position: absolute;
+  top: -8px;
+  right: -3px;
+  color: black;
+  width: 10px;
+  height: 10px;
+  color: whitesmoke;
+}
+.header__modal_header_exit:hover{
+   cursor: pointer;
+ }
+.header__modal_main{
+  height: 80%;
+}
+.header__modal_main input{
+  display: block;
+  margin: auto;
+}
+.header__modal_main input[type='text']{
+  margin-top: 5px;
+  width: 200px;
+  padding: 10px;
+  font-size: 12pt;
+}
+.header__modal_main input[type='file']{
+  padding: 5px;
+  font-size: 10pt;
+}
+.header__modal_main button{
+  width: 100%;
+  padding: 10px;
+  height:60px;
+  border-radius: 0px;
+  display: block;
+  margin: 20px 0;
+  font-size: 16pt;
+  border: none;
+  background-color: #1d5963;
+  color: whitesmoke;
+}
+.header__modal_main button:hover{
+  background-color: lightseagreen;
+  cursor: pointer;
+  color: #1d5963;
+}
+
+.header__modal_wrap {
+  transition: all linear 0.2s;
+}
+.header__modal_wrap.ng-hide {
+  opacity: 0;
+}

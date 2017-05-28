@@ -1,0 +1,9 @@
+main(ng-controller='gellaryCtrl')
+    ul.main__image_list(dnd-list="imageList")
+        li.main_image_box(ng-repeat='item in imageList', dnd-draggable="item", dnd-effect-allowed="move" dnd-moved="imageList.splice($index,1)", dnd-dragstart='moveItemStart()',dnd-dragend='moveItemEnd()')
+            div.main_image_box_gallary
+                img(width="600", height="400", src='{{item.url}}')
+                div.main__image_box_gallary_desc {{item.description}}
+    div.clearfix
+
+    ul.main_delete#main__corner( dnd-list='[]',ng-show="movedItem")

@@ -1,0 +1,14 @@
+header.header(ng-init='modal=false')
+    nav.header__nav
+        ul.header__nav_list
+            li
+                h2.header__nav_list_h2(ng-click='modal=!modal')  Добавити картинку
+    div.header__modal_wrap(ng-show='modal')
+        div.header__modal_box
+            div.header__modal_header
+                h2  Add new image
+                    div.header__modal_header_exit(ng-click='modal=!modal') x
+            div.header__modal_main
+                input(type="text", placeholder='name',ng-model='newImage.description')
+                input(type="file" onchange='angular.element(this).scope().img(event)')
+                button(ng-click='addImage()') Add
