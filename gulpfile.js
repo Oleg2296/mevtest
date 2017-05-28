@@ -40,16 +40,6 @@ gulp.task('script',function () {
        .pipe(gulp.dest('build/js'))
 });
 
-// gulp.task('images', function(cb) {
-//     gulp.src(['src/images/**/*.png','src/images/**/*.jpg','src/images/**/*.gif','src/images/**/*.jpeg'])
-//         .pipe(imageop({
-//         optimizationLevel: 5,
-//         progressive: true,
-//         interlaced: true
-//         }))
-//         .pipe(gulp.dest('build/images')).on('end', cb).on('error', cb);
-// });
-
 gulp.task('libs',function () {
    return gulp.src('./src/libs/**/*.js')
        .pipe(gulp.dest('build/libs'))
