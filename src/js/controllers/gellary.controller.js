@@ -1,6 +1,6 @@
 app.controller('gellaryCtrl',['$scope','GellaryServie',function ($scope,GellaryServie) {
     $scope.imageList=[];
-
+    $scope.movedItem=false;
     $scope.moveItemEnd=function () {
         $scope.movedItem=false;
     };

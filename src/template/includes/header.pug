@@ -1,4 +1,4 @@
-header.header(ng-init='modal=false')
+header.header()
     nav.header__nav
         ul.header__nav_list
             li
@@ -9,6 +9,6 @@ header.header(ng-init='modal=false')
                 h2  Add new image
                     div.header__modal_header_exit(ng-click='modal=!modal') x
             div.header__modal_main
-                input(type="text", placeholder='name',ng-model='newImage.description')
+                input(type="text", placeholder='name',ng-model='newImage.description',name='description')
                 input(type="file" onchange='angular.element(this).scope().img(event)')
                 button(ng-click='addImage()') Add

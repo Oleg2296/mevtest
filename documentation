@@ -1,0 +1,9 @@
+documentation:
+
+1. open folder mev proj, and open terminal in it;
+2. use command npm i to install all modules
+
+3. to run project use command "gulp" in terminal;
+4. to use unit test use command "karma start test/test/karma.conf.js"
+
+5. you welcome ;)

@@ -5,7 +5,6 @@ var minifycss = require('gulp-minify-css');
 var htmlmin = require('gulp-htmlmin');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-// var imageop = require('gulp-image-optimization');
 var browserSync = require('browser-sync');
 
 gulp.task('browserSync',['styles','pug','script'],function () {

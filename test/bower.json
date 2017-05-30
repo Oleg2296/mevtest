@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "homepage": "https://github.com/Oleg2296/firePlaces",
+  "authors": [
+    "Your Name <olegius2296@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
